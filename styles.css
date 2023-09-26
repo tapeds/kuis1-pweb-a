@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+nav {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  background: #4b527e;
+}
+
+nav h5 {
+  color: #fff;
+  width: fit-content;
+  font-size: x-large;
+  margin: auto;
+  padding-left: 5%;
+}
+
+nav ul {
+  padding: 0 20px;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+  width: 100%;
+}
+
+nav ul li {
+  float: right;
+}
+
+nav ul li:hover {
+  background: #e5c3a6;
+}
+
+nav ul li a {
+  display: block;
+  padding: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  main .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  main .hero img {
+    width: 595px;
+    height: 445px;
+  }
+
+  main .hero button {
+    width: 50%;
+  }
+
+  main .hero .text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  main .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 5%;
+    background-color: #4b527e;
+  }
+
+  main .second .products {
+    display: flex;
+    gap: 100px;
+  }
+
+  main .second img {
+    width: 360px;
+    height: 360px;
+  }
+
+  footer {
+    height: 20vh;
+    background-color: #30302d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  main .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    justify-content: space-around;
+    width: 100%;
+  }
+  main .hero .text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  main .hero img {
+    width: 80%;
+  }
+
+  main .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 5%;
+    background-color: #4b527e;
+  }
+
+  main .second .products {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  main .second img {
+    width: 250px;
+    height: 250px;
+  }
+
+  footer {
+    height: 20vh;
+    background-color: #30302d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+}
+
+main .hero h1 {
+  font-size: 60px;
+}
+
+main .hero h1 a {
+  color: #7c81ad;
+}
+
+main .hero img {
+  border-radius: 15px;
+}
+
+main .hero h4 {
+  font-family: sans-serif;
+}
+
+main .hero button {
+  background-color: #e5c3a6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+main .hero button:hover {
+  background-color: #d39a69;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+main .second h1 {
+  color: #fff;
+  font-size: 50px;
+}
+
+main .second .product {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+main .second img {
+  transition: transform 0.2s;
+}
+
+main .second img:hover {
+  transform: scale(1.15);
+}
+
+main .second .product h4 {
+  color: #fff;
+  font-family: sans-serif;
+}
+
+main .second button {
+  background-color: #e5c3a6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+main .second button:hover {
+  background-color: #d39a69;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer h3 {
+  color: #fff;
+  font-size: 40px;
+}
+
+footer ul {
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  gap: 50px;
+}
+
+footer ul li {
+  cursor: pointer;
+}
